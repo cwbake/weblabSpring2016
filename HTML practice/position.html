@@ -37,12 +37,10 @@
               height:100px;
               width: 100px;
               background-color: green;
-/*
-              position: relative;
-              position: absolute;
-              position:fixed;
-*/
-              position: static;
+              position: relative; /* looks to parent element for direction
+ +            position: absolute; /*default to top left corner until runs into a block
+ +            position: fixed; /*stays put as you scroll down page, ie headers and navs
+ +            position: static;  /*default behavior
           }
       </style>
 </head>
