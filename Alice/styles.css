@@ -1,15 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Bitter);
 
-
-
 h1 {
   color:#000;
   text-align: center;
 }
 
-
 html {
-  background: url(lightblue.jpg) no-repeat center center fixed;
+  background: url(oldpaper3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -31,9 +28,31 @@ p:first-child:first-letter {
        }
 
        img {
-          border:2px solid #021a40;
-          margin: 10px;
+          border:2px solid #000;
+          margin: 15px;
        }
 #stars {
           text-align: center
        }
+       #top, #bottom, #left, #right {
+       	background: #000;
+       	position: fixed;
+       	}
+       	#left, #right {
+       		top: 0; bottom: 0;
+       		width: 15px;
+       		}
+       		#left { left: 0; }
+       		#right { right: 0; }
+
+       	#top, #bottom {
+       		left: 0; right: 0;
+       		height: 15px;
+       		}
+       		#top { top: 0; }
+       		#bottom { bottom: 0; }
+
+#footer {
+    height: 100px;
+    margin: 0 auto;
+}

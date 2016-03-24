@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox - the new hotness</title>
+</head>
+<style media="screen">
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      overflow-y: auto;
+      flex-direction: column;
+    }
+
+  .header {
+    background-color: lightblue;
+    height: 50px;
+  }
+
+  .content{
+    background-color: #ccc;
+    /*flex: 1 0 auto;*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+  }
+
+  .sidebar {
+    background-color: #ffffff;
+    width: 200px;
+    flex: 1 0 auto;
+  }
+  .main {
+    flex-shrink: 1;
+    background-color: #efefef;
+    overflow-y: scroll;
+  }
+
+  .ads {
+    background-color: #ccc;
+    width: 150px;
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .ad {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+  }
+
+.ad:first-child {
+    margin-top: 1 rem;
+}
+
+.ad:after {
+  content: "$";
+  display: block;
+  color: #fff;
+
+}
+
+  .footer {
+    background-color: lightgreen;
+    height: 50px;
+  }
+
+
+
+</style>
+
+  <body>
+    <div class="header">
+        header
+    </div>
+
+    <div class="content clearfix">
+        <div class="sidebar">
+
+      <ul>
+        <li><a href="#">Link1</a></li>
+        <li><a href="#">Link2</a></li>
+        <li><a href="#">Link3</a></li>
+        <li><a href="#">Link4</a></li>
+      </ul>
+
+
+        </div>
+
+
+  <!-- p*5>lorem -->
+      <div class="main">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsum voluptatum culpa consequatur sequi ducimus nobis eveniet soluta eius labore, quasi cumque. Molestiae excepturi, rem. Quidem voluptates, libero sint praesentium.</p>
+          <p>Commodi eligendi inventore unde molestias accusamus iste nemo doloremque. Ducimus quod delectus, quisquam tempore dolor magnam, temporibus officiis non voluptatibus dolorum nulla veniam placeat. Fugit veniam ratione optio consectetur unde?</p>
+          <p>Eveniet, similique, voluptatem. Nihil neque voluptate voluptatem asperiores? Reiciendis, quos natus totam illum nam inventore culpa et cupiditate sint voluptatibus perferendis eum, sed, earum molestias excepturi quod corporis fugit mollitia.</p>
+          <p>Obcaecati sint ab itaque illum quasi architecto. Ad ipsam animi, dicta minima doloremque qui exercitationem, optio ducimus deserunt, pariatur possimus cupiditate reprehenderit. Aperiam aliquid minima reprehenderit ipsum incidunt nihil esse.</p>
+          <p>Id, alias, eum. Unde, eaque nisi, obcaecati, molestiae illum ullam maxime tenetur voluptates, sapiente eveniet enim repellendus. Labore quae reiciendis, corporis doloribus, repudiandae facere nihil dolores ducimus beatae ullam quia!</p>
+        </div>
+
+        <div class="ads">
+          <div class="ad"></div>
+          <div class="ad"></div>
+          <div class="ad"></div>
+
+          </div>
+
+          </div>
+
+          </div>
+        </div>
+
+        </div>
+
+        <div class="footer">
+          footer
+        </div>
+
+  </body>
+  </html>
