@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Chapter 1</title>
+    <link rel="stylesheet" href="styles.css" charset="utf-8">
+
+</head>
+<body>
+
+<h1>Chapter 1: Down the Rabbit-Hole</h1>
+
+<div id="bigalice">
+<img src="rabbithole.jpg" width="400" height="300" align="left">
+</div>
+
+<div id="left"></div>
+<div id="right"></div>
+<div id="top"></div>
+<div id="bottom"></div>
+
+
+
+<div class="container">
